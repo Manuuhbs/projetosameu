@@ -1,0 +1,133 @@
+@font-face {
+  font-family: fonte-coracao;
+  src: url(../assets/fonts/EmilysCandy-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #c6fec6;
+  font-family: fonte-coracao, Arial, Helvetica, sans-serif;
+  cursor:
+    url("../assets/img/namoro-virtual.png") 16 16,
+    auto;
+}
+.pagina-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-text-stroke: 0.5px black;
+}
+
+h1 {
+  padding-top: 75px;
+}
+
+.titulo {
+  color: #407c42;
+  font-style: italic;
+  border-bottom: 2px solid #000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.botoes-coluna-esquerda {
+  display: flex;
+  align-self: flex-start;
+  padding-top: 20px;
+  flex-direction: column;
+  min-width: 100px;
+  gap: 10px;
+}
+
+.botoes-coluna-esquerda > button {
+  background-color: #ebffc5;
+  border-radius: 10px;
+  font-size: 16px;
+  min-width: 180px;
+  min-height: 80px;
+  transition: all 0.2s ease;
+}
+
+.botoes-coluna-esquerda > button:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.botoes-coluna-direita > button {
+  background-color: #ebffc5;
+  border-radius: 10px;
+  font-size: 16px;
+  min-width: 180px;
+  min-height: 80px;
+  transition: all 0.2s ease;
+}
+.botoes-coluna-direita {
+  display: flex;
+  align-self: flex-start;
+  padding-top: 20px;
+  flex-direction: column;
+  min-width: 50px;
+  gap: 10px;
+}
+.botoes-coluna-direita > button:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+.btn-clicar {
+  transition: all 0.2s ease;
+  max-width: 250px;
+}
+.btn-clicar.ativo {
+  background-color: #b5d0dd;
+  color: black;
+  font-family: fonte-coracao;
+}
+.botoes-coluna-esquerda > button.ativo,
+.botoes-coluna-direita > button.ativo {
+  background-color: antiquewhite;
+  color: rgb(29, 28, 28);
+}
+
+.botoes {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+.botao-secret > button {
+  background-color: #ff6d8d;
+  border-radius: 10px;
+  font-size: 13px;
+  min-width: 50px;
+  min-height: 30px;
+  text-decoration: underline #80ffa6;
+}
+.botao-secret {
+  display: flex;
+  justify-content: center;
+}
+.fotos-principal {
+  display: flex;
+  gap: 10px;
+}
+.fotos-um {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: row;
+  height: 80px;
+  gap: 10px;
+}
+.fotos-dois {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: row;
+  height: 80px;
+  gap: 10px;
+}
